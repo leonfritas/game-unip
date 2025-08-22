@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Banda Amazonense que vem atuando na cena musical manauara desde 2017.">
+    <title>Conduta Zero 92</title>
+    <link rel="stylesheet" type="text/css" href="src/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="src/css/menu.css">
+    <link rel="stylesheet" href="src/css/carrossel.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+    <link rel="stylesheet" href="src/css/jogo.css">
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/animacaoSelectPersonagem.css">
+    <link rel="stylesheet" href="src/css/gameBoardResponsivo.css">
+</head>
+
+<body id="body">
+    <header class="cabecalho">
+        <img class="logo" src="src/images/logoUnip.png" alt="Logo unip">
+        <nav>
+
+            <input type="checkbox" id="menu-hamburguer" />
+            <label for="menu-hamburguer">
+                <div class="menuHamburguer">
+                    <span class="hamburguer"></span>
+                </div>
+            </label>
+            <ul class="menu">
+                <li><a id="home" class="item" href="#"><b>Home</b></a></li>
+        
+                
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+    </main>
+    <section class="conteudo home-container mostrar ">
+
+        <div class="apresentacaoDiv">
+            <h1>
+                Desenvolvido por alunos do curso de Análise e Desenvolvimento de Sistemas da UNIP, este jogo simples e 
+                divertido desafia você a pular obstáculos e testar seus reflexos. Criado utilizando apenas HTML, CSS, JavaScript e Node.js, 
+                conta ainda com sistema de ranking para salvar a pontuação dos jogadores. Boa sorte e divirta-se!
+            </h1>
+            <br>
+            <br>
+            <br>
+            <Button class="buttonIniciar">
+                <a id="jogo" class="item" href="#"><b>Iniciar</b>
+                </a>
+            </Button>
+        </div>
+        
+
+    </section>
+
+
+
+    <section class="conteudo jogo-container">
+        <div class="game">
+            <audio class="audioGame" autoplay ></audio>
+            <audio class="audioGameFalhou" autoplay ></audio>
+            <div class="select-caracter">
+                <h2 class="tituloPersonagem">Selecione seu personagem</h2>
+                <div class="card-caracter selecionado"><img src="./src/images/jogo/cardlacruz.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardrafael.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardleo.jpg"></div>
+                <div class="card-caracter"><img src="./src/images/jogo/cardpedro.jpg"></div>
+                <div class="card-caracter cardNovoPersonagem"><img src="./src/images/jogo/cardleo.jpg"></div>
+                <div class="divMapas">
+                    <h3>Escolha um local</h3>
+                    <img class="setaMapa opacidade setaMapaAnterior" src="./src/images/seta.png" alt="">
+                    <img class="setaMapa setaProximoMapa" src="./src/images/seta.png" alt="">
+                    
+                    <img class="mapa mapa1 mostrarMapa" src="./src/images/jogo/primeiroMapa.png" alt="">
+                    <img class="mapa mapa2" src="./src/images/jogo/segundoMapa.jpg" alt="">
+                    <img class="mapa mapa3" src="./src/images/jogo/terceiroMapa.jpg" alt="">
+                </div>
+                <div class="ranking">
+                    <h3>Ranking</h3>
+                    <table class= 'rankingTable'>
+                        <tr>
+                            <td class="nomeRank">Player</td>
+                            <td class="scoreRank">Score</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+
+                    </table>
+                </div>
+            </div>
+            
+            <div class=" turnYourPhone">
+                <h2 >Para jogar vire seu celular.</h2>
+                <img class="turnYourPhoneImg" src="./src/images/jogo/turnyourphone.gif" alt="turnYourPhone">
+            </div>
+            <div class="game-board">
+                <img class="imgPlayPause" onclick="audioPlayPause()" src="./src/images/jogo/imgPlayPause.png" alt="">
+                <p class="contador"></p>
+                <div class="divBotaoReset">
+                    <div class="button botaoReset">
+                        <a href="#">Restart</a>
+                    </div>
+                </div>
+                <h2 class="msgNovoPersonagem">Novo personagem desbloqueado!</h2>
+                <h2 class="start" onclick="startGame()">Start</h2>
+                <div class="tutorial">
+                    <h3>Mini Tutorial</h3>
+                    <p>Para pular cutuque o personagem.</p>
+                    <p>Clique no disquete para salvar score.</p>
+                </div>
+                <div class="divBotaoTrocarPersonagem">
+                    <div class="botaoTrocarPersonagem trocarPersonagem">
+                        <a href="#">Escolher outro personagem</a>
+                    </div>
+                </div>
+                <img  class='personagem' src="./src/images/jogo/personagemleo.jpg" alt="">
+                <img  class='obstaculo'src="./src/images/jogo/obstaculoleo.png" alt="">
+                <audio src=""></audio>
+                <img onclick="salvarGame()" class="disqueteSalvar" src="./src/images/jogo/disqueteSalva.png" alt="">
+            </div>
+    
+
+
+        </div>
+
+
+
+
+
+    </section>
+
+
+    <script src="src/js/animacao.js"></script>
+    <script src="src/js/jogo.js"></script>
+    <script src="src/js/animacaoSelecionarPersonagem.js"></script>
+</body>
+
+</html>
