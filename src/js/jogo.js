@@ -127,9 +127,10 @@ function audioPlayPause(){
 /* VARIÁVEIS FUNCIONAIS */
 
 const jump = ()=>{
+  // personagem.src = "./src/images/jogo/jump-leo.png"
     personagem.classList.add('jump')
-    const gameBoardPosition = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');
-    // console.log(gameBoardPosition)
+    
+    const gameBoardPosition = +window.getComputedStyle(gameBoard[0]).width.replace('px', '');    
     
     /* CONDIÇÃO QUE ATIVA CONTADOR DE PONTOS DESKTOP */
     if (gameBoardPosition > 1051){
@@ -137,8 +138,6 @@ const jump = ()=>{
       setTimeout(()=>{
         const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
-        console.log(obstaculoPosition)  
-        console.log(personagemPositionRight)
         if(contador <= 10){
           if(obstaculoPosition > 400 && obstaculoPosition > personagemPositionRight || obstaculoPosition > 1000){
             contadorfunction()  
@@ -149,12 +148,13 @@ const jump = ()=>{
       setTimeout(()=>{
         if(contador > 10){
           const obstaculoPosition = +window.getComputedStyle(obstaculo).left.replace('px', '');
-          console.log(obstaculoPosition) 
+
           if(obstaculoPosition > 400){
             contadorfunction()  
           }  
         }
       }, 500)
+      // personagem.src = "./src/images/jogo/personagemleo.gif"
     }
     
 
@@ -164,8 +164,7 @@ const jump = ()=>{
       setTimeout(()=>{
         const obstaculoPosition = +window.getComputedStyle(obstaculo).right.replace('px', '');
         const personagemPositionRight = +window.getComputedStyle(personagem).right.replace('px', '');
-        console.log(obstaculoPosition)  
-        console.log(personagemPositionRight)
+
         // if(contador <= 10){
           if(obstaculoPosition < 0 || obstaculoPosition > 400 || obstaculoPosition > 13000 ){
 
@@ -276,35 +275,35 @@ trocarPersonagem[0].addEventListener('click', ()=>{
 
 /* PERSONAGENS */
 
-/* LACRUZ */
-cardCaracter[0].addEventListener('click',()=>{ 
-    personagem.src = "./src/images/jogo/personagemlacruz.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
-    cardCaracterStartGame()
-})
-
-/* RAFAEL */
-cardCaracter[1].addEventListener('click', ()=>{
-    personagem.src = "./src/images/jogo/personagemrafael.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
-    cardCaracterStartGame()
-})
-
 /* LEO */
-cardCaracter[2].addEventListener('click', ()=>{
+cardCaracter[0].addEventListener('click',()=>{ 
     personagem.src = "./src/images/jogo/personagemleo.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     cardCaracterStartGame()
 })
 
-/* PEDRO */
-cardCaracter[3].addEventListener('click', ()=>{
-    personagem.src = "./src/images/jogo/personagempedro.gif"
+/* MATTEO */
+cardCaracter[1].addEventListener('click', ()=>{
+    personagem.src = "./src/images/jogo/personagemmateus.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     cardCaracterStartGame()
 })
 
-/* SERGIO */
+/* DARLISSON */
+cardCaracter[2].addEventListener('click', ()=>{
+    personagem.src = "./src/images/jogo/personagemdarlisson.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    cardCaracterStartGame()
+})
+
+/* SILVIO */
+cardCaracter[3].addEventListener('click', ()=>{
+    personagem.src = "./src/images/jogo/personagemsilvio.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    cardCaracterStartGame()
+})
+
+/* RUAN */
 cardCaracter[4].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemleo.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"

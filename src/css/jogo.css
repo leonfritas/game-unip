@@ -25,7 +25,7 @@
   .obstaculo{
     position:absolute;
     bottom: 0;
-    width: 100px;
+    width: 150px;
     right: 200px;
     animation: obstaculo-animation 1.5s infinite linear;
   }
@@ -142,11 +142,14 @@
 
   .select-caracter{
     display: flex;
-    justify-content: space-around;
-    height: 600px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 1500px;
     gap: 30px;
     margin-top: 200px;
     position: relative;
+    border: 1px solid white;
   }
 
   .select-caracter{
@@ -155,6 +158,18 @@
 
   .select-caracter.mostrarcaracter{
     display: flex;
+  }
+
+  .container-principal{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .show-personagem{
+    border: 2px solid var(--cor-padrao);
+    width: 500px;
+    height: 500px;
   }
 
   .tituloPersonagem{
@@ -386,7 +401,9 @@
   bottom: 50px;
   color: white;
   font-family: 'arcadeFont';
-  left: 250px;
+  left: 0;
+  right: 0;
+  margin: auto;
  
   
   
@@ -488,6 +505,15 @@
 .personagemDesbloqueado{
   display: block;
 }
+
+.cardsPersonagem{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
 
 .ranking{
   color: white;

@@ -67,7 +67,6 @@ jogo.addEventListener("click", ()=>{
             audioGameFalhou[0].src = audioGameOver
             mostrarDisqueteSalvar()
             
-            console.log(personagem.src)
             obstaculo.style.animation = pararAnimacao
             obstaculo.style.left = `${obstaculoPosition}px`;
     

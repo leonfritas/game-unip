@@ -1,14 +1,20 @@
+const cardPersonagens = document.querySelectorAll(".card-caracter");
 
-
-const cardPersonagem = document.querySelectorAll(".card-caracter");
-
-cardPersonagem.forEach((cardPersonagem) => {
-    cardPersonagem.addEventListener("mouseenter", () => {
+cardPersonagens.forEach((cardPersonagem) => {
+  cardPersonagem.addEventListener("mouseenter", () => {
+    const idSelecionado = cardPersonagem.dataset.id;
 
     const personagemSelecionado = document.querySelector(".selecionado");
-    personagemSelecionado.classList.remove("selecionado");
+    if (personagemSelecionado) {
+      personagemSelecionado.classList.remove("selecionado");
+    }
+
+    const showPersonagem = document.querySelector(".show-personagem");
+    if (showPersonagem) {
+      showPersonagem.src = `././src/images/jogo/${idSelecionado}.gif`;
+      console.log(showPersonagem.src);
+    }
 
     cardPersonagem.classList.add("selecionado");
-    
   });
 });

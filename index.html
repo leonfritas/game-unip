@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Banda Amazonense que vem atuando na cena musical manauara desde 2017.">
+    <meta name="description" content="Jogo realizado para feira de tecnologia.">
     <title>Conduta Zero 92</title>
     <link rel="stylesheet" type="text/css" href="src/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="src/css/style.css">
-    <link rel="shortcut icon" href="src/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="src/css/style.css">    
     <link rel="stylesheet" href="src/css/menu.css">
     <link rel="stylesheet" href="src/css/carrossel.css">
     <link rel="stylesheet" href="src/css/responsivo.css">
@@ -55,24 +54,31 @@
                 <a id="jogo" class="item" href="#"><b>Iniciar</b>
                 </a>
             </Button>
-        </div>
-        
-
+        </div>    
     </section>
-
-
-
     <section class="conteudo jogo-container">
         <div class="game">
             <audio class="audioGame" autoplay ></audio>
             <audio class="audioGameFalhou" autoplay ></audio>
             <div class="select-caracter">
                 <h2 class="tituloPersonagem">Selecione seu personagem</h2>
-                <div class="card-caracter selecionado"><img src="./src/images/jogo/cardlacruz.jpg"></div>
-                <div class="card-caracter"><img src="./src/images/jogo/cardrafael.jpg"></div>
-                <div class="card-caracter"><img src="./src/images/jogo/cardleo.jpg"></div>
-                <div class="card-caracter"><img src="./src/images/jogo/cardpedro.jpg"></div>
-                <div class="card-caracter cardNovoPersonagem"><img src="./src/images/jogo/cardleo.jpg"></div>
+                <div class="container-principal">
+                    <div class="showPersonagem">
+                        
+                        <div ><img class="show-personagem" src=""></div> 
+                    </div>
+                    <div class="cardsPersonagem">
+                        <div class="card-caracter selecionado"  data-id="personagemleo"><img src="./src/images/jogo/cardleo.jpg"></div>
+                        <div class="card-caracter " data-id="personagemmateus"><img src="./src/images/jogo/cardmateus.jpg"></div>
+                        <div class="card-caracter" data-id="personagemdarlisson"><img src="./src/images/jogo/carddarlisson.jpg"></div>
+                        <div class="card-caracter" data-id="personagemsilvio"><img src="./src/images/jogo/cardsilvio.jpg"></div>                            
+                        <div class="card-caracter" data-id="personagemruan"><img src="./src/images/jogo/cardruan.jpg"></div>                
+                        <div class="card-caracter cardNovoPersonagem"><img src="./src/images/jogo/cardleo.jpg"></div>
+                    </div>
+
+                    
+                </div>
+                
                 <div class="divMapas">
                     <h3>Escolha um local</h3>
                     <img class="setaMapa opacidade setaMapaAnterior" src="./src/images/seta.png" alt="">
@@ -90,25 +96,45 @@
                             <td class="scoreRank">Score</td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td class="nomeRanking1"></td>
+                            <td class="pontoRanking1"></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td class="nomeRanking2"></td>
+                            <td class="pontoRanking2"></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td class="nomeRanking3"></td>
+                            <td class="pontoRanking3"></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td class="nomeRanking4"></td>
+                            <td class="pontoRanking4"></td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td class="nomeRanking5"></td>
+                            <td class="pontoRanking5"></td>
                         </tr>
+                        <tr>
+                            <td class="nomeRanking6"></td>
+                            <td class="pontoRanking6"></td>
+                        </tr>
+                        <tr>
+                            <td class="nomeRanking7"></td>
+                            <td class="pontoRanking7"></td>
+                        </tr>
+                        <tr>
+                            <td class="nomeRanking8"></td>
+                            <td class="pontoRanking8"></td>
+                        </tr>
+                        <tr>
+                            <td class="nomeRanking9"></td>
+                            <td class="pontoRanking9"></td>
+                        </tr>
+                        <tr>
+                            <td class="nomeRanking10"></td>
+                            <td class="pontoRanking10"></td>
+                        </tr>                                                                                                
                         
 
                     </table>
@@ -140,7 +166,7 @@
                     </div>
                 </div>
                 <img  class='personagem' src="./src/images/jogo/personagemleo.jpg" alt="">
-                <img  class='obstaculo'src="./src/images/jogo/obstaculoleo.png" alt="">
+                <img  class='obstaculo'src="./src/images/jogo/obstaculo.png" alt="">
                 <audio src=""></audio>
                 <img onclick="salvarGame()" class="disqueteSalvar" src="./src/images/jogo/disqueteSalva.png" alt="">
             </div>
@@ -159,6 +185,7 @@
     <script src="src/js/animacao.js"></script>
     <script src="src/js/jogo.js"></script>
     <script src="src/js/animacaoSelecionarPersonagem.js"></script>
+    <script src="src/js/ranking.js"></script>
 </body>
 
 </html>

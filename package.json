@@ -1,7 +1,7 @@
 {
-  "name": "landing-page-conduta-zero-92-main",
+  "name": "Game - UNIP",
   "version": "1.0.0",
-  "description": "<p>Landing page criada para grupo musical, contém 5 abas, Home, Loja, Discografia, Fotos e Contato, na aba de Discografia também contém links para um breve resumo sobre o albúm selecionado.</p> <p>Tecnologias Utilizadas:</p> - HTML  - <br> - CSS",
+  "description": "Jogo realizado para feira de tecnologia.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,9 +9,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "mssql": "^11.0.1",
     "mysql2": "^3.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
-  }
+  },
+  "keywords": []
 }
