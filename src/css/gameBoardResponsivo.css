@@ -93,6 +93,14 @@
       
     .card-caracter img{
         width: 100%;
+        
+    }
+
+    .nomePersonagem{
+        text-align: center;
+        font-size: 18px;
+        color: white;
+        margin-top: 5px;
     }
 
     .turnYourPhone{
