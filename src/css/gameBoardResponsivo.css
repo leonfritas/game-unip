@@ -58,7 +58,7 @@
     }
 
     .ranking{
-        position:absolute;
+        /* position:absolute; */
         bottom: -150px;
         margin: auto;
         right: 0;

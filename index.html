@@ -42,54 +42,22 @@
     <section class="conteudo home-container mostrar ">
 
         <div class="apresentacaoDiv">
-            <h1>
-                Desenvolvido por alunos do curso de Análise e Desenvolvimento de Sistemas da UNIP, este jogo simples e 
-                divertido desafia você a pular obstáculos e testar seus reflexos. Criado utilizando apenas HTML, CSS, JavaScript e Node.js, 
-                conta ainda com sistema de ranking para salvar a pontuação dos jogadores. Boa sorte e divirta-se!
-            </h1>
-            <br>
-            <br>
-            <br>
-            <Button class="buttonIniciar">
-                <a id="jogo" class="item" href="#"><b>Iniciar</b>
-                </a>
-            </Button>
-        </div>    
-    </section>
-    <section class="conteudo jogo-container">
-        <div class="game">
-            <audio class="audioGame" autoplay ></audio>
-            <audio class="audioGameFalhou" autoplay ></audio>
-            <div class="select-caracter">
-                <h2 class="tituloPersonagem">Selecione seu personagem</h2>
-                <div class="container-principal">
-                    <div class="showPersonagem">
-                        
-                        <div ><img class="show-personagem" src=""></div> 
-                    </div>
-                    <div class="cardsPersonagem">
-                        <div class="card-caracter selecionado"  data-id="personagemleo"><img src="./src/images/jogo/cardleo.jpg"> <h2 class="nomePersonagem">Leo</h2></div>
-                        <div class="card-caracter " data-id="personagemmateus"><img src="./src/images/jogo/cardmateus.jpg"><h2 class="nomePersonagem">Matteo</h2></div>
-                        <div class="card-caracter" data-id="personagemdarlisson"><img src="./src/images/jogo/carddarlisson.jpg"><h2 class="nomePersonagem">Darlison</h2></div>
-                        <div class="card-caracter" data-id="personagemsilvio"><img src="./src/images/jogo/cardsilvio.jpg"><h2 class="nomePersonagem">Silvio</h2></div>                            
-                        <div class="card-caracter" data-id="personagemruan"><img src="./src/images/jogo/cardruan.jpg"><h2 class="nomePersonagem">Ruan</h2></div>                
-                        <div class="card-caracter" data-id="personagemruan"><img src="./src/images/jogo/cardmarcelo.jpg"><h2 class="nomePersonagem">Marcelo</h2></div> 
-                        <div class="card-caracter cardNovoPersonagem"><img src="./src/images/jogo/cardleo.jpg"><h2 class="nomePersonagem">teste</h2></div>
-                    </div>
-
-                    
-                </div>
-                
-                <div class="divMapas">
-                    <h3>Escolha um local</h3>
-                    <img class="setaMapa opacidade setaMapaAnterior" src="./src/images/seta.png" alt="">
-                    <img class="setaMapa setaProximoMapa" src="./src/images/seta.png" alt="">
-                    
-                    <img class="mapa mapa1 mostrarMapa" src="./src/images/jogo/primeiroMapa.png" alt="">
-                    <img class="mapa mapa2" src="./src/images/jogo/segundoMapa.jpg" alt="">
-                    <img class="mapa mapa3" src="./src/images/jogo/terceiroMapa.jpg" alt="">
-                </div>
-                <div class="ranking">
+            <div class="apresentacao">
+                <h1>
+                    Desenvolvido por alunos do curso de Análise e Desenvolvimento de Sistemas da UNIP, este jogo simples e 
+                    divertido desafia você a pular obstáculos e testar seus reflexos. Criado utilizando apenas HTML, CSS, JavaScript e Node.js, 
+                    conta ainda com sistema de ranking para salvar a pontuação dos jogadores. Boa sorte e divirta-se!
+                </h1>
+                <br>
+                <br>
+                <br>
+                <Button class="buttonIniciar">
+                    <a id="jogo" class="item" href="#"><b>Iniciar</b>
+                    </a>
+                </Button>
+            </div>
+            
+            <div class="ranking">
                     <h3>Ranking</h3>
                     <table class= 'rankingTable'>
                         <tr>
@@ -140,6 +108,42 @@
 
                     </table>
                 </div>
+        </div>    
+    </section>
+    <section class="conteudo jogo-container">
+        <div class="game">
+            <audio class="audioGame" autoplay ></audio>
+            <audio class="audioGameFalhou" autoplay ></audio>
+            <div class="select-caracter">
+                <h2 class="tituloPersonagem">Selecione seu personagem</h2>
+                <div class="container-principal">
+                    <div class="showPersonagem">
+                        
+                        <div ><img class="show-personagem" src=""></div> 
+                    </div>
+                    <div class="cardsPersonagem">
+                        <div class="card-caracter selecionado"  data-id="personagemleo"><img src="./src/images/jogo/cardleo.jpg"> <h2 class="nomePersonagem">Leo</h2></div>
+                        <div class="card-caracter " data-id="personagemmateus"><img src="./src/images/jogo/cardmateus.jpg"><h2 class="nomePersonagem">Matteo</h2></div>
+                        <div class="card-caracter" data-id="personagemdarlisson"><img src="./src/images/jogo/carddarlisson.jpg"><h2 class="nomePersonagem">Darlison</h2></div>
+                        <div class="card-caracter" data-id="personagemsilvio"><img src="./src/images/jogo/cardsilvio.jpg"><h2 class="nomePersonagem">Silvio</h2></div>                            
+                        <div class="card-caracter" data-id="personagemruan"><img src="./src/images/jogo/cardruan.jpg"><h2 class="nomePersonagem">Ruan</h2></div>                
+                        <div class="card-caracter" data-id="personagemruan"><img src="./src/images/jogo/cardmarcelo.jpg"><h2 class="nomePersonagem">Marcelo</h2></div> 
+                        <div class="card-caracter cardNovoPersonagem"><img src="./src/images/jogo/cardleo.jpg"><h2 class="nomePersonagem">teste</h2></div>
+                    </div>
+
+                    
+                </div>
+                
+                <div class="divMapas">
+                    <h3>Escolha um local</h3>
+                    <img class="setaMapa opacidade setaMapaAnterior" src="./src/images/seta.png" alt="">
+                    <img class="setaMapa setaProximoMapa" src="./src/images/seta.png" alt="">
+                    
+                    <img class="mapa mapa1 mostrarMapa" src="./src/images/jogo/primeiroMapa.png" alt="">
+                    <img class="mapa mapa2" src="./src/images/jogo/segundoMapa.jpg" alt="">
+                    <img class="mapa mapa3" src="./src/images/jogo/terceiroMapa.jpg" alt="">
+                </div>
+                
             </div>
             
             <div class=" turnYourPhone">

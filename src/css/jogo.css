@@ -517,7 +517,7 @@
 
 .ranking{
   color: white;
-  position: absolute;
+  /* position: absolute; */
   bottom: 70px;
   right: 100px;
   width: 400px;
