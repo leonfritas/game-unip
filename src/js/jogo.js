@@ -310,6 +310,19 @@ cardCaracter[4].addEventListener('click', ()=>{
     cardCaracterStartGame()
 })
 
+/* MARCELO */
+cardCaracter[5].addEventListener('click', ()=>{
+    personagem.src = "./src/images/jogo/personagemmarcelo.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    cardCaracterStartGame()
+})
+
+/* LUCAS */
+cardCaracter[6].addEventListener('click', ()=>{
+    personagem.src = "./src/images/jogo/personagemlucas.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    cardCaracterStartGame()
+})
 
 /* SELEÇÃO DE MAPA CARROSEL */
 

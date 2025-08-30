@@ -57,8 +57,7 @@
         bottom: 50px;
     }
 
-    .ranking{
-        /* position:absolute; */
+    .ranking{        
         bottom: -150px;
         margin: auto;
         right: 0;
