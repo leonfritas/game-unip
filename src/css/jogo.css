@@ -149,7 +149,16 @@
     gap: 30px;
     margin-top: 200px;
     position: relative;
-    border: 1px solid white;
+    /* border: 1px solid white; */
+  }
+
+  .nomePersonagem{
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    margin-top: 5px;
+    font-family: 'arcadeFont';
+    letter-spacing: 5px;
   }
 
   .select-caracter{
@@ -167,7 +176,7 @@
   }
 
   .show-personagem{
-    border: 2px solid var(--cor-padrao);
+    /* border: 2px solid var(--cor-padrao); */
     width: 500px;
     height: 500px;
   }
