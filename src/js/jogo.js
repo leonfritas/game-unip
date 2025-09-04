@@ -32,10 +32,26 @@ let audioStartGame = './src/music/audiogamemk.mp3'
 
 /* FUNCÕES */
 
-function salvarGame(){
-  if (confirm('Deseja salvar o jogo?')){
-    if (prompt('Digite seu nome:')){
-      alert(contador)
+function salvarGame() {
+  if (confirm("Deseja salvar o jogo?")) {
+    let nome = prompt("Digite seu nome:");
+    if (nome) {
+      fetch("http://localhost:3000/ranking", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          nomeJogador: nome,
+          pontos: contador // supondo que "contador" já tenha os pontos
+        })
+      })
+      .then(res => res.json())
+      .then(data => {
+        alert("Pontuação salva com sucesso!");
+        console.log(data);
+      })
+      .catch(err => console.error("Erro ao salvar:", err));
     }
   }
 }
@@ -305,7 +321,7 @@ cardCaracter[3].addEventListener('click', ()=>{
 
 /* RUAN */
 cardCaracter[4].addEventListener('click', ()=>{
-    personagem.src = "./src/images/jogo/personagemleo.gif"
+    personagem.src = "./src/images/jogo/personagemruan.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     cardCaracterStartGame()
 })

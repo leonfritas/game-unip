@@ -30,4 +30,24 @@ app.get("/ranking", async (req, res) => {
   }
 });
 
+app.post("/ranking", async (req, res) => {
+  const { nomeJogador, pontos } = req.body;
+
+  if (!nomeJogador || pontos === undefined) {
+    return res.status(400).json({ error: "Nome e pontos são obrigatórios" });
+  }
+
+  try {
+    let pool = await sql.connect(config);
+    await pool.request()
+      .input("nomeJogador", sql.VarChar(100), nomeJogador)
+      .input("pontos", sql.Int, pontos)
+      .query("INSERT INTO Ranking (nomeJogador, pontos) VALUES (@nomeJogador, @pontos)");
+
+    res.status(201).json({ message: "Registro inserido com sucesso!" });
+  } catch (err) {
+    res.status(500).send(err.message);
+  }
+});
+
 app.listen(3000, () => console.log("Servidor rodando na porta 3000"));
