@@ -197,7 +197,7 @@
 
     
     .apresentacaoDiv{
-        margin-top: 150px;
+        margin-top: 100px;
         text-align: center;
         color: white;
         font-size: 12px;
@@ -206,7 +206,8 @@
         margin-right: auto;
         height: 100vh;    
         flex-direction: column;
-        margin-bottom: 50px;        
+        margin-bottom: 50px;    
+        gap: 80px;    
     }
 
     .apresentacao{
@@ -221,8 +222,7 @@
     }
 
     html{
-        min-height: 160%;        
-        border: 5px solid blue;
+        min-height: 180%;                
     }
 
     .showPersonagem{
@@ -235,7 +235,13 @@
         gap: 10px;
     }
 
+    .logo{
+        height: 50px;
+    }
 
+    .cabecalho{
+        align-items: flex-start;
+    }
    
 }
 
