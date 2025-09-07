@@ -1,11 +1,4 @@
-@media(max-width: 1000px){
 
-  .imgHome{
-    width: 250px;
-
-  }
-
-}
 
 @media (max-width: 650px) {
   body {
@@ -186,35 +179,9 @@
   }
 
 
-  .home-container {
-    /* min-height: 100vh; */
-      
-    border: 1px solid white;    
-    /* height: 100%; */
-      
-  }
 
-  .apresentacaoDiv{
-    margin-top: 50px;
-    text-align: center;
-    color: white;
-    font-size: 15px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100vh;
-    border: 1px solid white;  
-    flex-direction: column;
-  }
-
-  .ranking{
-    position:relative;
-
-  }
-
-  .rankingTable{
-    width: 100%;
-
+  body{
+    padding: 20px;
   }
 
 

@@ -138,14 +138,10 @@
         bottom: 50px;
     }
 
-    .ranking{
-        position:absolute;
-        bottom: -350px;
-        margin: auto;
-        right: 0;
-        left: 0;
-        width: 300px;
+    .ranking{        
+        width: 100%;
         height: 100px;
+        padding-bottom: 20px;
     }
 
     .select-caracter{
@@ -177,7 +173,7 @@
         width: 100%;
     }
 
-     .game-board{
+    .game-board{
         height: 0;
         width: 0;  
     }
@@ -206,6 +202,31 @@
         display: block;
        
     }
+
+    
+    .apresentacaoDiv{
+        margin-top: 150px;
+        text-align: center;
+        color: white;
+        font-size: 15px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100vh;    
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
+
+
+
+    body{
+        height: 100%;    
+    }
+
+    html{
+        min-height: 130%;        
+    }
+
    
 }
 
