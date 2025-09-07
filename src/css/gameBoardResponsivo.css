@@ -114,18 +114,11 @@
 @media(max-width: 460px){
     .jogo-container{
         margin: 0 0 0 0;
-
+        background: black;
     }
 
-    .divMapas{
-        position: absolute;
-        margin: auto;
-        right: 0;
-        left: 0;
-        width: 200px;
-        height: 150px;
-        bottom: -200px;
-    }
+    
+
 
     .divMapas h3{
         top: -40px;
@@ -144,15 +137,14 @@
         padding-bottom: 20px;
     }
 
-    .select-caracter{
-        
+    .select-caracter{        
         justify-content: space-evenly;
         height: 400px;
         gap: 10px;
-
         position: relative;
         flex-wrap: wrap;
-        margin-top: 100px;
+        margin-top: 50px;
+        background: black;
     }
 
     .select-caracter h2{
@@ -208,24 +200,41 @@
         margin-top: 150px;
         text-align: center;
         color: white;
-        font-size: 15px;
-        width: 90%;
+        font-size: 12px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         height: 100vh;    
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 50px;        
     }
 
+    .apresentacao{
+        width: 100%;        
+    }
 
+    .home-container{        
+    }
 
     body{
         height: 100%;    
     }
 
     html{
-        min-height: 130%;        
+        min-height: 160%;        
+        border: 5px solid blue;
     }
+
+    .showPersonagem{
+        display: none;
+    }
+    .cardsPersonagem{
+        border: 2px solid black;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
 
    
 }
