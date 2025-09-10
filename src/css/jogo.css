@@ -403,7 +403,7 @@
 .divMapas{
   width: 400px;
   height: 200px;
-  position: absolute;
+  /* position: absolute; */
   border: 1px solid white;
   bottom: 50px;
   color: white;

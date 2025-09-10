@@ -347,6 +347,13 @@ cardCaracter[7].addEventListener('click', ()=>{
     cardCaracterStartGame()
 })
 
+/* MATHEUS */
+cardCaracter[7].addEventListener('click', ()=>{
+    personagem.src = "./src/images/jogo/personagemmatheus.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    cardCaracterStartGame()
+})
+
 /* SELEÇÃO DE MAPA CARROSEL */
 
 const mapas = document.getElementsByClassName('mapa')
