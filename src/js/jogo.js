@@ -36,7 +36,7 @@ function salvarGame() {
   if (confirm("Deseja salvar o jogo?")) {
     let nome = prompt("Digite seu nome:");
     if (nome) {
-      fetch("http://localhost:3000/ranking", {
+      fetch("https://bced599b6b81.ngrok-free.app/ranking", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
@@ -46,7 +46,10 @@ function salvarGame() {
           pontos: contador // supondo que "contador" já tenha os pontos
         })
       })
-      .then(res => res.json())
+      .then(
+        res => res.json()
+        
+    )
       .then(data => {
         alert("Pontuação salva com sucesso!");
         console.log(data);

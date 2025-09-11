@@ -1,3 +1,9 @@
+import { baseUrl } from './service/api.js';
+
+console.log(baseUrl); // https://bced599b6b81.ngrok-free.app
+
+
+// console.log(baseUrl);
 // Variáveis para nomes
 const nomeRanking1 = document.getElementsByClassName("nomeRanking1");
 const nomeRanking2 = document.getElementsByClassName("nomeRanking2");
@@ -24,8 +30,17 @@ const pontoRanking10 = document.getElementsByClassName("pontoRanking10");
 
 async function carregarRanking() {
   try {
-    let resposta = await fetch("http://localhost:3000/ranking");
-    let ranking = await resposta.json();    
+    let resposta = await fetch(`${baseUrl}/ranking`);
+    
+    // Verifica se a resposta é OK
+    if (!resposta.ok) {
+      throw new Error(`Erro na requisição: ${resposta.status}`);
+    }
+
+    // Extrai o JSON da resposta
+    let ranking = await resposta.json(); 
+    
+    console.log(ranking);
 
     // Atribuições
     if (ranking.length > 0) {
@@ -72,5 +87,4 @@ async function carregarRanking() {
     console.error("Erro ao carregar ranking:", err);
   }
 }
-
 carregarRanking();
