@@ -29,16 +29,19 @@ const pontoRanking9 = document.getElementsByClassName("pontoRanking9");
 const pontoRanking10 = document.getElementsByClassName("pontoRanking10");
 
 async function carregarRanking() {
+  console.log("Chamando:", `${baseUrl}/ranking`);
+
   try {
     let resposta = await fetch(`${baseUrl}/ranking`);
-    
+    console.log("Resposta bruta:", resposta.text());
+
     // Verifica se a resposta é OK
     if (!resposta.ok) {
       throw new Error(`Erro na requisição: ${resposta.status}`);
     }
 
     // Extrai o JSON da resposta
-    let ranking = await resposta.json(); 
+    const ranking = await resposta.json(); 
     
     console.log(ranking);
 
