@@ -352,7 +352,7 @@ cardCaracter[7].addEventListener('click', ()=>{
 })
 
 /* MATHEUS */
-cardCaracter[7].addEventListener('click', ()=>{
+cardCaracter[8].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemmatheus.gif"
     obstaculo.src = "./src/images/jogo/obstaculoleo.png"
     cardCaracterStartGame()

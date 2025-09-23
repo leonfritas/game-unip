@@ -401,35 +401,26 @@
 }
 
 .divMapas{
-  width: 400px;
-  height: 200px;
-  /* position: absolute; */
+  position: relative;
+  width: 600px;
+  height: 300px;
   border: 1px solid white;
-  bottom: 50px;
   color: white;
   font-family: 'arcadeFont';
-  left: 0;
-  right: 0;
-  margin: auto;
-  top: 50px;
- 
-  
-  
+  margin: 100px;
 }
 
 .divMapas h3{
   text-align: center;
   letter-spacing: 5px;
-  position: absolute;
-  top: -20px;
-  right: 0;
-  left: 0;
+  /* position: absolute; */
+  margin: 20px;
 }
 
 .setaMapa{
   width: 40px;
-  cursor: pointer;
   position: absolute;
+  cursor: pointer;
   bottom: 80px;
 }
 
