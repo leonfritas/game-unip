@@ -12,6 +12,7 @@ const disqueteSalvar = document.getElementsByClassName('disqueteSalvar')
 const imgPlayPause = document.getElementsByClassName('imgPlayPause')
 const tutorial = document.querySelector('.tutorial')
 
+
 /* VARIÁVEIS DO JOGO */
 
 let contador = 0 
@@ -36,7 +37,7 @@ function salvarGame() {
   if (confirm("Deseja salvar o jogo?")) {
     let nome = prompt("Digite seu nome:");
     if (nome) {
-      fetch("https://bced599b6b81.ngrok-free.app/ranking", {
+      fetch(`https://2d878c32d36d.ngrok-free.app/ranking`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

@@ -14,6 +14,8 @@ const turnYourPhone = document.getElementsByClassName('turnYourPhone')
 
 
 
+
+
 home.addEventListener("click", () => {
     for(i = 0; i <= 1; i++){
         containers[i].classList.remove("mostrar")

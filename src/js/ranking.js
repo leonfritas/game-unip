@@ -1,6 +1,5 @@
 import { baseUrl } from './service/api.js';
 
-console.log(baseUrl); // https://bced599b6b81.ngrok-free.app
 
 
 // console.log(baseUrl);
@@ -32,18 +31,19 @@ async function carregarRanking() {
   console.log("Chamando:", `${baseUrl}/ranking`);
 
   try {
-    let resposta = await fetch(`${baseUrl}/ranking`);
-    console.log("Resposta bruta:", resposta.text());
+const resposta = await fetch(`${baseUrl}/ranking`, {
+  headers: {
+    "ngrok-skip-browser-warning": "true"  // 👈 esse cabeçalho pula o aviso
+  }
+});
 
-    // Verifica se a resposta é OK
-    if (!resposta.ok) {
-      throw new Error(`Erro na requisição: ${resposta.status}`);
-    }
+if (!resposta.ok) {
+  throw new Error(`Erro na requisição: ${resposta.status}`);
+}
 
-    // Extrai o JSON da resposta
-    const ranking = await resposta.json(); 
-    
-    console.log(ranking);
+const ranking = await resposta.json();
+console.log("Ranking recebido:", ranking);
+
 
     // Atribuições
     if (ranking.length > 0) {
