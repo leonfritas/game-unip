@@ -376,17 +376,26 @@ setaProximoMapa[0].addEventListener("click", function () {
     gameBoardMapa[0].classList.add('primeiroMapaSelecionado')
     gameBoardMapa[0].classList.remove('segundoMapaSelecionado')
     gameBoardMapa[0].classList.remove('terceiroMapaSelecionado')
+    gameBoardMapa[0].classList.remove('quartoMapaSelecionado')    
     }
     if(mapaAtual == 1){
     gameBoardMapa[0].classList.add('segundoMapaSelecionado')
     gameBoardMapa[0].classList.remove('primeiroMapaSelecionado')
     gameBoardMapa[0].classList.remove('terceiroMapaSelecionado')
+    gameBoardMapa[0].classList.remove('quartoMapaSelecionado')    
     }
     if(mapaAtual == 2){
     gameBoardMapa[0].classList.add('terceiroMapaSelecionado')
     gameBoardMapa[0].classList.remove('primeiroMapaSelecionado')
     gameBoardMapa[0].classList.remove('segundoMapaSelecionado')
+    gameBoardMapa[0].classList.remove('quartoMapaSelecionado')
     }
+    if(mapaAtual == 3){
+    gameBoardMapa[0].classList.add('quartoMapaSelecionado')
+    gameBoardMapa[0].classList.remove('primeiroMapaSelecionado')
+    gameBoardMapa[0].classList.remove('segundoMapaSelecionado')
+    gameBoardMapa[0].classList.remove('terceiroMapaSelecionado')
+    }    
     esconderMapaAtual();
     mostrarMapa();
     mostrarOuEsconderSetasMapa();

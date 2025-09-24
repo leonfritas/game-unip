@@ -134,6 +134,10 @@
     background: url(../images/jogo/terceiroMapa.jpg) center; 
     background-size: cover;
   }
+  .quartoMapaSelecionado{
+    background: url(../images/jogo/quartoMapa.jpg) center; 
+    background-size: cover;
+  }  
   
 
   .game-board.mostrargame-board{
