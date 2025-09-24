@@ -141,6 +141,11 @@
     /* animation: delapraca 0.5s;  */
   }
 
+  .apresentacaoDiv h1{
+    color: white;
+    font-size: 25px;
+  }
+
   @-webkit-keyframes delapraca {
     0% {
       opacity: 0;
