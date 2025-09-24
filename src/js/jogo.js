@@ -79,7 +79,7 @@ function contadorfunction(){
     contadorHtml[0].innerHTML = contador < 10? '0' + contador : contador 
     //
     if(contador == 20 && cardCaracter[4].style.display == ''){
-    desbloqueiaPersonagem()
+    // desbloqueiaPersonagem()
     }
     //
     aumentaVelocidade()
@@ -89,8 +89,8 @@ function desbloqueiaPersonagem(){
     msgNovoPersonagem[0].classList.add('mostrarMsgNovoPersonagem')
     setTimeout(()=>{
         msgNovoPersonagem[0].classList.remove('mostrarMsgNovoPersonagem')
-        cardCaracter[4].classList.add('personagemDesbloqueado')
-        cardCaracter[4].style = mostrarObjeto
+        cardCaracter[8].classList.add('personagemDesbloqueado')
+        cardCaracter[8].style = mostrarObjeto
     },6000)
 }
 
@@ -223,6 +223,7 @@ const loop = setInterval(()=>{
             contadorHtml[0].innerHTML = contador
             gameBoard[0].removeAttributeNS
             obstaculo.style = obstaculoIniciarAnimacao
+            obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
             personagem.style.animation = ''
             personagem.style.bottom = 0;
             //
@@ -298,63 +299,63 @@ trocarPersonagem[0].addEventListener('click', ()=>{
 /* LEO */
 cardCaracter[0].addEventListener('click',()=>{ 
     personagem.src = "./src/images/jogo/personagemleo.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* MATTEO */
 cardCaracter[1].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemmateus.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* DARLISSON */
 cardCaracter[2].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemdarlisson.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* SILVIO */
 cardCaracter[3].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemsilvio.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* RUAN */
 cardCaracter[4].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemruan.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* MARCELO */
 cardCaracter[5].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemmarcelo.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* LUCAS */
 cardCaracter[6].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemlucas.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* HANNA */
 cardCaracter[7].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemhanna.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 
 /* MATHEUS */
 cardCaracter[8].addEventListener('click', ()=>{
     personagem.src = "./src/images/jogo/personagemmatheus.gif"
-    obstaculo.src = "./src/images/jogo/obstaculoleo.png"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
     cardCaracterStartGame()
 })
 

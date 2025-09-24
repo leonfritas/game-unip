@@ -76,7 +76,7 @@ jogo.addEventListener("click", ()=>{
             personagem.style.bottom = `${personagemPosition}px`;
     
             personagem.src = imgGameOver
-    
+            obstaculo.src = "./src/images/jogo/obstaculoleo.png"
             botaoReset[0].style = mostrarObjeto
 
         }
