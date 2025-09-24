@@ -359,6 +359,13 @@ cardCaracter[8].addEventListener('click', ()=>{
     cardCaracterStartGame()
 })
 
+/* LEO JR. */
+cardCaracter[9].addEventListener('click', ()=>{
+    personagem.src = "./src/images/jogo/personagemleojr.gif"
+    obstaculo.src = "./src/images/jogo/obstaculoleo.gif"
+    cardCaracterStartGame()
+})
+
 /* SELEÇÃO DE MAPA CARROSEL */
 
 const mapas = document.getElementsByClassName('mapa')
