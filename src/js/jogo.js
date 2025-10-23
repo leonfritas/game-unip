@@ -37,7 +37,7 @@ function salvarGame() {
   if (confirm("Deseja salvar o jogo?")) {
     let nome = prompt("Digite seu nome:");
     if (nome) {
-      fetch(`https://6aff044e446f.ngrok-free.app/ranking`, {
+      fetch(`https://93c44447ef94.ngrok-free.app/ranking`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
