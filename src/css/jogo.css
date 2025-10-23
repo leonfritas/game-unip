@@ -74,7 +74,7 @@
 .game-board{
     width: 80%;
     height: 500px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin: 0 auto;
     position:relative;
     overflow: hidden;
@@ -475,7 +475,7 @@
   position: relative;
   width: 600px;
   height: 300px;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   color: white;
   font-family: 'arcadeFont';
   margin: 100px;
@@ -668,7 +668,10 @@
 
 .rankingTable{
   width: 100%;
-  background: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, 
+    rgba(255, 215, 0, 0.1) 0%, 
+    rgba(0, 255, 0, 0.1) 50%, 
+    rgba(255, 0, 0, 0.1) 100%);
   border-radius: 15px;
   overflow: hidden;
   border-collapse: separate;
@@ -707,22 +710,10 @@ tr:hover td {
   text-shadow: 0 0 8px rgba(78, 205, 196, 0.5);
 }
 
-tr:nth-child(1) td {
-  background: linear-gradient(90deg, rgba(255, 215, 0, 0.2), transparent);
-  color: #ffd700;
-  font-weight: 700;
-}
-
-tr:nth-child(2) td {
-  background: linear-gradient(90deg, rgba(192, 192, 192, 0.2), transparent);
-  color: #c0c0c0;
-  font-weight: 600;
-}
-
-tr:nth-child(3) td {
-  background: linear-gradient(90deg, rgba(205, 127, 50, 0.2), transparent);
-  color: #cd7f32;
-  font-weight: 600;
+tr td {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), transparent);
+  color: white;
+  font-weight: 500;
 }
 
 
